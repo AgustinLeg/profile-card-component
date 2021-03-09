@@ -1,0 +1,121 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+.background{
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+     position: absolute;
+}
+.background img{
+     position: absolute;
+     width:100%;
+}
+.background .back-top{
+     top: -10%;
+     left: -60%;
+}
+.background .back-bottom{
+     bottom:-15%;
+     right: -50%;
+     z-index: 10;
+}
+
+.container{
+     background: hsl(185,75%,39%);
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.container .card{
+     width: 320px;
+     background: #fff;
+     border-radius:15px;
+     background-image: url(images/bg-pattern-card.svg);
+     background-repeat: repeat-x;
+     z-index: 9999;
+}
+
+.container .card .image{
+     display: flex;
+     justify-content: center;
+     margin-top: 100px;
+     padding: 10px;
+}
+
+.container .card .image img{
+     border-radius: 100%;
+     padding: 5px;
+     background: #fff;
+}
+
+.container .card .info{
+     text-align:center;
+}
+
+.container .card .info .name{
+     font-size: 16px;
+     color:hsl(229, 23%, 23%);
+     font-weight: 600;
+}
+
+.container .card .info .name span{
+     margin-left:10px;
+     color:hsl(0, 0%, 59%);
+     font-weight: 400;
+}
+
+.container .card .info .country{
+     margin-top: 15px;
+     color:hsl(227, 10%, 46%);
+     margin-bottom: 30px;
+}
+
+.container .card .social-container{
+     display: flex;
+     justify-content: space-around;
+     padding:20px 0 20px 0;
+     text-align: center;
+     border-top: 1px solid hsl(0, 0%, 90%);
+}
+
+.container .card .social-container p{
+     color:hsl(0, 0%, 59%);
+     font-size: 12px;
+}
+.container .card .social-container .social-counts{
+     color:hsl(229, 23%, 23%);
+     font-size: 18px;
+     font-weight: 900;
+}
+
+.attribution{
+     background:rgb(255, 0, 119);
+     color:#fff;
+     padding:10px 0
+}
+
+.attribution a{
+     color:hsl(229, 23%, 23%) !important;
+}
+
+
+
+@media screen and (min-width: 768px){
+     .background .back-top{
+          top: -130%;
+          left: -40%;
+     }
+     .background .back-bottom{
+          bottom:-150%;
+          right: -30%;
+          z-index: 10;
+     }
+}
